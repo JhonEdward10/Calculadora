@@ -4,7 +4,7 @@
 }
 
 .App{
-  height: 100%;
+  min-height: 100vh;
   padding: 10px;
   background-color: beige;
   font-family: Lato, sans-serif;
