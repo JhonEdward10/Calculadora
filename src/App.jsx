@@ -18,7 +18,7 @@ function App() {
     if(input){
       setInput(evaluate(input))
     } else{
-      alert("Por Favor ingrese los valores para realizar calculos");
+      alert('"Por Favor ingrese los valores para realizar cálculos"');
     }
   };
 
@@ -54,15 +54,15 @@ function App() {
           <Boton handleClick={addInput}>-</Boton>
         </div>
         <div className='fila'>
-          <Boton handleClick={calcuteResult}>=</Boton>
+          <BotonClear handleClick={() => setInput('')}>
+            C
+          </BotonClear>
           <Boton handleClick={addInput}>0</Boton>
           <Boton handleClick={addInput}>.</Boton>
           <Boton handleClick={addInput}>+</Boton>
         </div>
         <div className='fila'>
-          <BotonClear handleClick={() => setInput('')}>
-            Clear
-          </BotonClear>
+          <Boton handleClick={calcuteResult}>=</Boton>
         </div>
       </div>
     </div>
